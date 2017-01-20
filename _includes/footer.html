@@ -6,7 +6,7 @@
 <hr/>
 <footer class="row">
   <div class="col-md-1">
-    <h4>{% if prev_episode %}<a href="{{ site.root }}{{ prev_episode.url }}"><span class="glyphicon glyphicon-menu-left"></span></a>{% endif %}</h4>
+    <h4>{% if prev_episode %}<a href="{{ page.root }}{{ prev_episode.url }}"><span class="glyphicon glyphicon-menu-left"></span></a>{% endif %}</h4>
   </div>
   <div class="col-md-10 footertext">
     <h4>
@@ -14,12 +14,12 @@
       /
       <a href="{{ site.repo }}">Source</a>
       /
-      <a href="{{ site.root }}/license/">License</a>
+      <a href="{{ page.root }}/license/">License</a>
       /
       <a href="mailto:{{site.email}}">Contact</a>
     </h4>
   </div>
   <div class="col-md-1">
-    <h4>{% if next_episode %}<a href="{{ site.root }}{{ next_episode.url }}"><span class="glyphicon glyphicon-menu-right"></span></a>{% endif %}</h4>
+    <h4>{% if next_episode %}<a href="{{ page.root }}{{ next_episode.url }}"><span class="glyphicon glyphicon-menu-right"></span></a>{% endif %}</h4>
   </div>
 </footer>
